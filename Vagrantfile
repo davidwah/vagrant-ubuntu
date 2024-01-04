@@ -1,0 +1,8 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "bento/ubuntu-22.04"
+    config.vm.hostname = "node-demo"
+    config.vm.provider :virtualbox do |vb|
+        vb.memory = 1024
+        vb.cpus = 1
+    end
+end
